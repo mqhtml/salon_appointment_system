@@ -25,17 +25,19 @@ public class Services {
     private JRadioButton rdbtnTreatmentStylist2;
     private JRadioButton rdbtnTreatmentStylist3;
     private JButton btnAddTreatment;
-    private JTable table1;
+    private JTable tblServices;
     private JButton btnConfirm;
-    private JScrollPane tblServices;
+    private JScrollPane JScrollPane;
     private JTabbedPane servicesPanel;
+    private JTextField textField1;
+    private JLabel txtTotalPrice;
 
     private ArrayList<Services> hairStyles = new ArrayList<>();
     private ArrayList<Services> hairColors = new ArrayList<>();
     private ArrayList<Services> hairTreatments = new ArrayList<>();
 
     public Services() {
-        DefaultTableModel tableServices = (DefaultTableModel) table1.getModel();
+        DefaultTableModel tableServices = (DefaultTableModel) tblServices.getModel();
 
         tableServices.addColumn("No.");
         tableServices.addColumn("Service");
